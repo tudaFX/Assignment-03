@@ -1,0 +1,310 @@
+/*
+    COLOR
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+*/
+
+body {
+    color: var(--bs-dark);
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+/*
+    Xây dựng phần ảnh Banner
+*/
+#banner {
+    padding-top: 150px;
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--bs-light);
+}
+
+/*
+    Xây dựng Navbar
+*/
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar a {
+    padding: 15px 25px;
+    border: 1px solid #e9ecef;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a i {
+    color: var(--bs-primary);
+}
+
+#navbar img {
+    width: 50px;
+    height: 50px;
+    margin: 0 100px;
+    border-radius: 50%;
+    border: 2.5px solid #f8f9fa;
+    outline: 0.5px #e9ecef solid;
+    transform: scale(2.5);
+}
+
+/*
+    Xây dựng thông tin cá nhân
+*/
+#personal-info-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#personal-info-1 .info-item h2 {
+    margin-bottom: 25px;
+}
+
+#personal-info-1 div:first-child {
+    padding: 100px 50px 100px 200px;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+#personal-info-1 div:last-child {
+    padding: 100px 200px 100px 50px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#personal-info-1 div:last-child span {
+    font-weight: bold;
+}
+
+#personal-info-1 div:last-child p:last-child {
+    margin-top: 50px;
+}
+
+#personal-info-1 div:last-child p:last-child i {
+    color: var(--bs-primary);
+}
+
+/*
+    Xây dựng thông tin cá nhân
+*/
+#personal-info-2 {
+    margin: 100px auto;
+    max-width: 1000px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#personal-info-2 > div {
+    border: 1px solid #e9ecef;
+    padding: 0 25px;
+}
+
+#personal-info-2 .heading {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#personal-info-2 .heading h2 {
+    width: 75%;
+    margin: 0;
+}
+
+#personal-info-2 .heading i {
+    font-size: 30px;
+}
+
+#personal-info-2 ul {
+    padding-left: 15px;
+    list-style-position: outside;
+    margin: 0;
+}
+
+#personal-info-2 .date {
+    font-style: italic;
+}
+
+#personal-info-2 .date span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+}
+
+#personal-info-2 #hobbies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+#personal-info-2 #hobbies button {
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid var(--bs-primary);
+}
+
+#personal-info-2 #hobbies button i {
+    color: var(--bs-primary);
+    font-size: 15px;
+}
+
+#personal-info-2 .on,
+#personal-info-2 .off {
+    margin: 0 10px 10px 0;
+    width: 50px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: super;
+}
+
+#personal-info-2 .on {
+    background-color: #1c7ed6;
+}
+
+#personal-info-2 .off {
+    background-color: #e9ecef;
+}
+
+/* 
+    Xây dựng phần Chứng chỉ - Giải thưởng
+*/
+#certificates-awards {
+    padding: 100px 200px;
+    background-color: var(--bs-light);
+}
+
+#certificates-awards h2 {
+    margin-bottom: 25px;
+}
+
+#certificates-awards .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: 1fr 1px;
+    gap: 25px;
+}
+
+#certificates-awards .grid-item img {
+    width: 200px;
+    margin-right: 25px;
+    float: left;
+}
+
+#certificates-awards .grid-item::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#certificates-awards .vertical-border,
+#certificates-awards .horizontal-border {
+    background-color: var(--bs-yellow);
+}
+
+#certificates-awards .horizontal-border {
+    grid-column: 1 / 4;
+}
+
+/* 
+    Xây dựng phần Dự án
+*/
+#projects {
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+#projects h2 {
+    margin-bottom: 25px;
+}
+
+#projects .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#projects .grid-container .grid-item a {
+    color: var(--bs-dark);
+    text-decoration: none;
+}
+
+#projects .grid-container .grid-item img {
+    width: 100%;
+}
+
+#projects .grid-container .grid-item,
+#projects .grid-container .grid-item div,
+#projects .grid-container .grid-item table {
+    border: 1px solid var(--bs-light);
+}
+
+#projects .grid-container .grid-item div {
+    padding: 5px;
+}
+
+#projects .grid-container .grid-item .heading {
+    font-weight: bold;
+}
+
+#projects .grid-container .grid-item div span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+}
+
+#projects .grid-container .grid-item table {
+    border-bottom: none;
+    border-collapse: collapse;
+}
+
+#projects .grid-container .grid-item table td {
+    padding: 5px;
+    border-top: 1px solid #e9ecef;
+    vertical-align: top;
+}
+
+#projects .grid-container .grid-item table td:first-child {
+    width: 30%;
+}
+
+/* 
+    Xây dựng phần Liên hệ
+*/
+#contact {
+    height: 100px;
+}

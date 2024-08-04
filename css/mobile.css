@@ -1,0 +1,67 @@
+@media (max-width: 500px) {
+    /* Xây dựng Navbar */
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar a {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Xây dựng Thông tin cá nhân */
+    #personal-info-1 {
+        grid-template-columns: 1fr;
+    }
+
+    #personal-info-1 .info-item {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    /* Xây dựng Thông tin cá nhân */
+    #personal-info-2 {
+        max-width: auto;
+        grid-template-columns: 1fr;
+    }
+
+    /* Xây dựng Chứng chỉ - Giải thưởng */
+    #certificates-awards {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #certificates-awards .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1px 1fr 1px;
+    }
+
+    #certificates-awards .grid-container .horizontal-border {
+        grid-column: 1 / 2;
+    }
+
+    /* Xây dựng Dự án */
+    #projects {
+        max-width: auto;
+    }
+
+    #projects h2 {
+        margin-left: 25px;
+    }
+
+    #projects .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    #projects .grid-container .grid-item {
+        padding: 0 25px;
+    }
+
+    /* Xây dựng Liên hệ */
+    #contact {
+        height: 50px;
+        font-size: 90%;
+    }
+}
